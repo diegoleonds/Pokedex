@@ -1,8 +1,13 @@
 # Pokedex
 
+## Design:
+
+<img src="Design.png" width="800" height="600"/>
+
 ## Objetivos:
-- Exibir informações da [api](https://pokeapi.co/)
+- Exibir pokemons da [api](https://pokeapi.co/)
 - Realizar testes de views
+- Seguir o design
 
 ## Bibliotecas:
 - [Material Design](https://material.io/develop/android/)
