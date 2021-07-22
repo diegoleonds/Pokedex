@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/MainCardViewWidth"
+    android:layout_height="@dimen/MainCardViewHeight"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyCardView"
+    tools:backgroundTint="@color/fire_type">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ellipse"
+            android:translationX="-15dp"
+            android:translationY="-15dp"/>
+
+        <TextView
+            android:id="@+id/CardViewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:textAppearance="@style/CardViewTitleAppearance"
+            tools:text="Test"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_pokeball_svg"
+            android:layout_gravity="end|center_vertical"
+            android:translationX="35dp"/>
+
+</com.google.android.material.card.MaterialCardView>

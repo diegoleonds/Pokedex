@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="MainCardViewHeight">80dp</dimen>
+    <dimen name="MainCardViewWidth">164dp</dimen>
+    <dimen name="pokemon_grid_list_margin">4dp</dimen>
+    <dimen name="pokemon_grid_list_final_item_bottom_margin">50dp</dimen>
+</resources>

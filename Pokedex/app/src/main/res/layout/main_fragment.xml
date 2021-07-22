@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_fg_bg_color"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="564dp"
+        android:background="@drawable/main_fg_bg">
+
+        <TextView
+            android:id="@+id/MainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/main_fragment_title"
+            android:textAppearance="@style/TitleAppearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MainSearchLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="@string/search_pokemons_hint"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="@id/MainTitle"
+            app:layout_constraintStart_toStartOf="@id/MainTitle"
+            app:layout_constraintTop_toBottomOf="@+id/MainTitle"
+            app:startIconDrawable="@drawable/ic_baseline_search_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/MainSearchTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_txt_bg" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/PokemonCardView"
+            layout="@layout/menu_icon"
+            android:layout_width="@dimen/MainCardViewWidth"
+            android:layout_height="@dimen/MainCardViewHeight"
+            app:layout_constraintStart_toStartOf="@id/MainSearchLayout"
+            app:layout_constraintTop_toBottomOf="@id/MainSearchLayout"
+            android:layout_marginTop="25dp" />
+
+        <include
+            android:id="@+id/MovesCardView"
+            layout="@layout/menu_icon"
+            android:layout_width="@dimen/MainCardViewWidth"
+            android:layout_height="@dimen/MainCardViewHeight"
+            app:layout_constraintEnd_toEndOf="@id/MainSearchLayout"
+            app:layout_constraintTop_toTopOf="@id/PokemonCardView" />
+
+        <include
+            android:id="@+id/AbilitiesCardView"
+            layout="@layout/menu_icon"
+            android:layout_width="@dimen/MainCardViewWidth"
+            android:layout_height="@dimen/MainCardViewHeight"
+            app:layout_constraintStart_toStartOf="@id/MainSearchLayout"
+            app:layout_constraintTop_toBottomOf="@id/PokemonCardView"
+            android:layout_marginTop="12dp" />
+
+        <include
+            android:id="@+id/ItemsCardView"
+            layout="@layout/menu_icon"
+            android:layout_width="@dimen/MainCardViewWidth"
+            android:layout_height="@dimen/MainCardViewHeight"
+            app:layout_constraintEnd_toEndOf="@id/MainSearchLayout"
+            app:layout_constraintTop_toTopOf="@id/AbilitiesCardView" />
+
+        <include
+            android:id="@+id/LocationsCardView"
+            layout="@layout/menu_icon"
+            android:layout_width="@dimen/MainCardViewWidth"
+            android:layout_height="@dimen/MainCardViewHeight"
+            app:layout_constraintStart_toStartOf="@id/MainSearchLayout"
+            app:layout_constraintTop_toBottomOf="@id/AbilitiesCardView"
+            android:layout_marginTop="12dp" />
+
+        <include
+            android:id="@+id/TypeChartsCardView"
+            layout="@layout/menu_icon"
+            android:layout_width="@dimen/MainCardViewWidth"
+            android:layout_height="@dimen/MainCardViewHeight"
+            app:layout_constraintEnd_toEndOf="@id/MainSearchLayout"
+            app:layout_constraintTop_toTopOf="@id/LocationsCardView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="main_fragment_title">What Pokemon \nare you looking for?</string>
+    <string name="search_pokemons_hint">Search pokemons</string>
+    <string name="pokedex_cv_title">Pokedex</string>
+    <string name="moves_cv_title">Moves</string>
+    <string name="abilities_cv_title">Abilities</string>
+    <string name="items_cv_title">Items</string>
+    <string name="locations_cv_title">Locations</string>
+    <string name="type_charts_cv_title">Type Charts</string>
+    <string name="pokedex_title">Pokedex</string>
+    <string name="fire_type">Fire</string>
+    <string name="water_type">Water</string>
+    <string name="grass_type">Grass</string>
+    <string name="bug_type">Bug</string>
+    <string name="eletric_type">Electric</string>
+
+    <string name="network_error">Network error</string>
+    <string name="not_found_error">Not found</string>
+    <string name="access_denied_error">Access denied</string>
+    <string name="service_unavailable_error">Service unavailable</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="default_type">Default</string>
+</resources>

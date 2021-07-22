@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/PokemonInfoRootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.PokemonInfoFragment"
+    tools:background="@color/grass_type">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/PokemonInfoAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        tools:background="@color/grass_type">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/PokemonInfoClpsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="center|center_horizontal"
+            app:expandedTitleGravity="top"
+            app:expandedTitleMarginTop="95dp"
+            app:expandedTitleTextAppearance="@style/TitleAppearance.ExpandedToolbar.Colorfull"
+            app:collapsedTitleTextAppearance="@style/TitleAppearance.CollapsedToolbar.Colorfull"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            tools:title="Bulbasaur">
+
+            <ImageView
+                android:id="@+id/PokemonInfoImgView"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:translationY="20dp"
+                android:layout_marginBottom="5dp"
+                tools:src="@drawable/bulbasaur_bigger"
+                android:background="@drawable/pokemon_info_img_bg"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+            <ImageView
+                android:id="@+id/PokemonInfoBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|top"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:padding="3dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_collapseMode="pin"
+                app:tint="@color/white" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/PokemonInfoScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@drawable/pokemon_info_bg">
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
