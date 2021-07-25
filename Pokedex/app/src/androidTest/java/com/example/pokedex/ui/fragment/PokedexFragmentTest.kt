@@ -1,32 +1,37 @@
 package com.example.pokedex.ui.fragment
 
-import androidx.test.espresso.Espresso
+import android.view.View
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers
-import androidx.test.espresso.matcher.ViewMatchers.withId
+
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
 import com.example.pokedex.R
 import com.example.pokedex.ui.model.PokemonType
+import com.example.pokedex.ui.util.NewCoroutineScope
 import com.example.pokedex.util.launchFragment
-import com.example.pokedex.util.setNavController
 import com.example.pokedex.viewmatchers.recyclerViewAtPositionOnView
+import org.hamcrest.Matcher
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.koin.android.ext.android.inject
+
 
 @LargeTest
 @RunWith(AndroidJUnit4::class)
 class PokedexFragmentTest {
 
+    lateinit var CoroutineScopeReference: NewCoroutineScope
+
     @Test
     fun checkRecyclerViewFirstItem() {
         val pokedexFragment = launchFragment<PokedexFragment>()
-        Thread.sleep(2000)
+
+        pokedexFragment.onFragment{
+            CoroutineScopeReference = it.CoroutineScope
+        }
+
         onView(withId(R.id.PokedexRv))
             .check(
                 matches(
@@ -47,4 +52,10 @@ class PokedexFragmentTest {
                 )
             )
     }
+
+    fun withId(id: Int): Matcher<View> {
+        while (CoroutineScopeReference.isAnyJobRunning){}
+        return androidx.test.espresso.matcher.ViewMatchers.withId(id)
+    }
 }
+

@@ -21,15 +21,18 @@ import com.example.pokedex.ui.adapter.PokemonAdapter
 import com.example.pokedex.ui.model.Pokemon
 import com.example.pokedex.ui.model.PokemonType
 import com.example.pokedex.ui.util.ImgLoader
+import com.example.pokedex.ui.util.NewCoroutineScope
 import com.example.pokedex.ui.viewmodel.PokedexViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
+
 import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
+
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
 
     private val viewModel: PokedexViewModel by viewModel()
+    val CoroutineScope: NewCoroutineScope by inject()
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var pokemonAdapter: PokemonAdapter
@@ -91,7 +94,8 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
     }
 
     private fun getData() {
-        CoroutineScope(Dispatchers.IO).launch { viewModel.getPokemons() }
+        this.CoroutineScope.launch { viewModel.getPokemons() }
+        //CoroutineScope(Dispatchers.IO).launch { viewModel.getPokemons() }
     }
 
     private fun setBackBtnClick(view: View) {

@@ -12,12 +12,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70ff8bdd-41d8-4c68-a242-ecbbc1022d43" name="Default Changelist" comment="" />
+    <list default="true" id="70ff8bdd-41d8-4c68-a242-ecbbc1022d43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -91,7 +94,7 @@
       <recent name="com.example.pokedex.data.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests.Tests in 'com.example.pokedex'">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -420,11 +423,12 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="632" y="251" key="AndroidProcessChooserDialog/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1626717195259" />
-    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1626980917674">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="846" y="176" key="FileChooserDialogImpl" timestamp="1627184546057">
+      <screen x="0" y="0" width="2498" height="1080" />
     </state>
     <state x="569" y="165" key="FileChooserDialogImpl/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1626980917674" />
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1626195699459" />
+    <state x="846" y="176" key="FileChooserDialogImpl/2560.611.1304.768/0.0.2498.1080@0.0.2498.1080" timestamp="1627184546057" />
     <state width="1637" height="477" key="GridCell.Tab.0.bottom" timestamp="1626980417127">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -491,9 +495,9 @@
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1626291510914" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pokedex$pokedex_in_Pokedex_app.ic" NAME="pokedex in Pokedex.app Coverage Results" MODIFIED="1626973587589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Pokedex$com_example_pokedex_in_Pokedex_app.ic" NAME="com.example.pokedex in Pokedex.app Coverage Results" MODIFIED="1626706849038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.pokedex.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Pokedex$pokedex_in_Pokedex_app.ic" NAME="pokedex in Pokedex.app Coverage Results" MODIFIED="1626973587589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
