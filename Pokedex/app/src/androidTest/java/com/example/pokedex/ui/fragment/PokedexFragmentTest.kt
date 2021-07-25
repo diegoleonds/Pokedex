@@ -54,7 +54,7 @@ class PokedexFragmentTest {
     }
 
     fun withId(id: Int): Matcher<View> {
-        while (CoroutineScopeReference.isAnyJobRunning){}
+        while (CoroutineScopeReference.isAnyJobRunning){ Thread.sleep(20)}
         return androidx.test.espresso.matcher.ViewMatchers.withId(id)
     }
 }
