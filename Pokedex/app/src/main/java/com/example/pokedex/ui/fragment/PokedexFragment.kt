@@ -1,10 +1,7 @@
 package com.example.pokedex.ui.fragment
 
 import android.os.Bundle
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -19,12 +16,11 @@ import com.example.pokedex.ui.adapter.Click
 import com.example.pokedex.ui.adapter.MarginItemDecoration
 import com.example.pokedex.ui.adapter.PokemonAdapter
 import com.example.pokedex.ui.model.Pokemon
-import com.example.pokedex.ui.model.PokemonType
 import com.example.pokedex.ui.util.ImgLoader
-import com.example.pokedex.ui.util.NewCoroutineScope
 import com.example.pokedex.ui.viewmodel.PokedexViewModel
-
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
+
 import org.koin.android.ext.android.inject
 
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -32,7 +28,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
 
     private val viewModel: PokedexViewModel by viewModel()
-    val CoroutineScope: NewCoroutineScope by inject()
+    val CoroutineScope: CoroutineScope by inject()
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var pokemonAdapter: PokemonAdapter
@@ -94,7 +90,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
     }
 
     private fun getData() {
-        this.CoroutineScope.launch { viewModel.getPokemons() }
+        CoroutineScope.launch { viewModel.getPokemons() }
         //CoroutineScope(Dispatchers.IO).launch { viewModel.getPokemons() }
     }
 
