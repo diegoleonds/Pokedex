@@ -1,68 +1,62 @@
 package com.example.pokedex.ui.fragment
 
-import android.view.View
+import androidx.fragment.app.testing.FragmentScenario
+import androidx.lifecycle.viewModelScope
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
-
+import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import com.example.pokedex.R
 import com.example.pokedex.ui.model.PokemonType
+import com.example.pokedex.util.afterCoroutine
 import com.example.pokedex.util.launchFragment
 import com.example.pokedex.viewmatchers.recyclerViewAtPositionOnView
-import kotlinx.coroutines.*
-import org.hamcrest.Matcher
+import kotlinx.coroutines.CoroutineScope
+import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import java.util.*
-import kotlin.coroutines.CoroutineContext
-
 
 @LargeTest
 @RunWith(AndroidJUnit4::class)
 class PokedexFragmentTest {
 
-    lateinit var CoroutineScopeReference: CoroutineScope
+    private lateinit var coroutineScopeReference: CoroutineScope
+    private lateinit var fragmentScenario: FragmentScenario<PokedexFragment>
+
+    @Before
+    fun setup() {
+        fragmentScenario = launchFragment()
+        fragmentScenario.onFragment {
+            coroutineScopeReference = it.viewModel.viewModelScope
+        }
+    }
 
     @Test
     fun checkRecyclerViewFirstItem() {
-        val pokedexFragment = launchFragment<PokedexFragment>()
+        afterCoroutine(coroutineScopeReference) {
+            onView(withId(R.id.PokedexRv))
+                .check(
+                    matches(
+                        recyclerViewAtPositionOnView(
+                            0, withText("bulbasaur"), R.id.PokemonItemName
+                        )
+                    )
+                )
 
-        pokedexFragment.onFragment{
-            CoroutineScopeReference = it.CoroutineScope
+            onView(withId(R.id.PokedexRv))
+                .check(
+                    matches(
+                        recyclerViewAtPositionOnView(
+                            0,
+                            withText(PokemonType.GRASS.descriptionResource),
+                            R.id.PokemonItemType
+                        )
+                    )
+                )
         }
-
-        onView(withId(R.id.PokedexRv))
-            .check(
-                matches(
-                    recyclerViewAtPositionOnView(
-                        0, withText("bulbasaur"), R.id.PokemonItemName
-                    )
-                )
-            )
-
-        onView(withId(R.id.PokedexRv))
-            .check(
-                matches(
-                    recyclerViewAtPositionOnView(
-                        0,
-                        withText(PokemonType.GRASS.descriptionResource),
-                        R.id.PokemonItemType
-                    )
-                )
-            )
     }
-
-    fun withId(id: Int): Matcher<View> = runBlocking {
-        val job = CoroutineScopeReference.coroutineContext[Job]
-        val jobs = job?.children?.toMutableList()
-        jobs?.removeAll { !it.isActive }
-        jobs?.joinAll()
-        androidx.test.espresso.matcher.ViewMatchers.withId(id)
-    }
-
-
 
 }
 

@@ -19,16 +19,14 @@ import com.example.pokedex.ui.model.Pokemon
 import com.example.pokedex.ui.util.ImgLoader
 import com.example.pokedex.ui.viewmodel.PokedexViewModel
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-
-import org.koin.android.ext.android.inject
 
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
 
-    private val viewModel: PokedexViewModel by viewModel()
-    val CoroutineScope: CoroutineScope by inject()
+    val viewModel: PokedexViewModel by viewModel()
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var pokemonAdapter: PokemonAdapter
@@ -57,8 +55,8 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
             ),
             object : Click<Pokemon> {
                 override fun simpleClick(pokemon: Pokemon) {
-                    val action = PokedexFragmentDirections.
-                        actionPokedexFragmentToPokemonInfoFragment(pokemon)
+                    val action =
+                        PokedexFragmentDirections.actionPokedexFragmentToPokemonInfoFragment(pokemon)
                     Navigation.findNavController(view).navigate(action)
                 }
             }
@@ -76,7 +74,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
     }
 
     private fun observeViewModel(view: View) {
-        viewModel.pokemons.observe(viewLifecycleOwner, Observer {
+        viewModel.pokemons.observe(viewLifecycleOwner) {
             it?.let {
                 when (it) {
                     is Result.Success -> pokemonAdapter.updateData(it.data)
@@ -86,12 +84,11 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
                     ).show()
                 }
             }
-        })
+        }
     }
 
     private fun getData() {
-        CoroutineScope.launch { viewModel.getPokemons() }
-        //CoroutineScope(Dispatchers.IO).launch { viewModel.getPokemons() }
+        viewModel.getPokemons()
     }
 
     private fun setBackBtnClick(view: View) {

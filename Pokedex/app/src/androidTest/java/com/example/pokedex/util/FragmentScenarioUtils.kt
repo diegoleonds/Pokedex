@@ -8,6 +8,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.navigation.Navigation
 import androidx.navigation.testing.TestNavHostController
 import com.example.pokedex.R
+import kotlinx.coroutines.runBlocking
 
 const val themeId = R.style.Theme_Pokedex
 

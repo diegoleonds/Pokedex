@@ -12,5 +12,4 @@ val uiModule = module {
     viewModel { MainViewModel() }
     viewModel { PokedexViewModel(get()) }
     viewModel { PokemonInfoViewModel() }
-    single { CoroutineScope(Dispatchers.IO)}
 }
