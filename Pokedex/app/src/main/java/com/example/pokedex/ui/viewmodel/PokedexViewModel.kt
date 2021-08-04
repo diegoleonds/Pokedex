@@ -8,7 +8,9 @@ import com.example.pokedex.data.api.ApiDefaultValues
 import com.example.pokedex.domain.usecase.GetPokemonsUseCase
 import com.example.pokedex.ui.model.Pokemon
 import com.example.pokedex.data.error.Result
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class PokedexViewModel(
     val getPokemonsUseCase: GetPokemonsUseCase
@@ -17,7 +19,7 @@ class PokedexViewModel(
     val pokemons: LiveData<Result<ArrayList<Pokemon>>>
         get() = _pokemons
 
-    fun getPokemons(offset: Int = ApiDefaultValues.offset) {
+    fun loadPokemons(offset: Int = ApiDefaultValues.offset) {
         viewModelScope.launch {
             _pokemons.postValue(getPokemonsUseCase.getPokemons(offset))
         }

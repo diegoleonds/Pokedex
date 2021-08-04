@@ -5,7 +5,7 @@ import com.example.pokedex.extensions.wait
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.runBlocking
 
-fun afterCoroutine(coroutineScope: CoroutineScope, function: () -> ViewInteraction) = runBlocking {
+fun afterCoroutine(coroutineScope: CoroutineScope, function: () -> Unit) = runBlocking {
     coroutineScope.wait()
     function()
 }

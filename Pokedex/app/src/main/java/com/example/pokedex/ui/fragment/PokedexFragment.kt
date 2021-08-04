@@ -88,7 +88,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
     }
 
     private fun getData() {
-        viewModel.getPokemons()
+        viewModel.loadPokemons()
     }
 
     private fun setBackBtnClick(view: View) {
