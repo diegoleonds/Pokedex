@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe2d63ca-75e2-4a36-a0e7-cc3fa57bffe6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/pokedex/ui/fragment/PokedexFragmentRoboletricTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/pokedex/ui/fragment/PokedexFragmentRoboletricTest.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\diego.leon\.android\avd\Pixel_3a_API_30_x86.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="correcaoCoroutineTest" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1627397251" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="correcaoCoroutineTest" />
+                    <option name="lastUsedInstant" value="1627397250" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="1vrB5qLQU8MPsWcCRPqiE0DNNZT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@C:\Users\diego.leon\.android\avd\Pixel_3a_API_30_x86.avd" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-26T14:38:01.860771200Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/example/pokedex/ui" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.pokedex.ui.fragment" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.pokedex" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PokedexFragmentRoboletricTest.shouldShowPokemonsOnRv">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Pokedex.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokedexFragmentRoboletricTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pokedex.app" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pokedex.ui.fragment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.pokedex.ui.fragment" />
+      <option name="MAIN_CLASS_NAME" value="com.example.pokedex.ui.fragment.PokedexFragmentRoboletricTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokedexFragmentRoboletricTest.a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pokedex.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pokedex.ui.fragment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.pokedex.ui.fragment" />
+      <option name="MAIN_CLASS_NAME" value="com.example.pokedex.ui.fragment.PokedexFragmentRoboletricTest" />
+      <option name="METHOD_NAME" value="a" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokedexFragmentRoboletricTest.aaaaa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pokedex.app" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pokedex.ui.fragment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.pokedex.ui.fragment" />
+      <option name="MAIN_CLASS_NAME" value="com.example.pokedex.ui.fragment.PokedexFragmentRoboletricTest" />
+      <option name="METHOD_NAME" value="aaaaa" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokedexFragmentRoboletricTest.shouldShow20PokemonsOnRv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pokedex.app" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pokedex.ui.fragment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.pokedex.ui.fragment" />
+      <option name="MAIN_CLASS_NAME" value="com.example.pokedex.ui.fragment.PokedexFragmentRoboletricTest" />
+      <option name="METHOD_NAME" value="shouldShow20PokemonsOnRv" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokedexFragmentRoboletricTest.shouldShowPokemonsOnRv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pokedex.app" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.pokedex.ui.fragment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.pokedex.ui.fragment" />
+      <option name="MAIN_CLASS_NAME" value="com.example.pokedex.ui.fragment.PokedexFragmentRoboletricTest" />
+      <option name="METHOD_NAME" value="shouldShowPokemonsOnRv" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="JUnit." />
+      <item itemvalue="JUnit.PokedexFragmentRoboletricTest.a" />
+      <item itemvalue="JUnit.PokedexFragmentRoboletricTest.aaaaa" />
+      <item itemvalue="JUnit.PokedexFragmentRoboletricTest.shouldShow20PokemonsOnRv" />
+      <item itemvalue="JUnit.PokedexFragmentRoboletricTest" />
+      <item itemvalue="JUnit.PokedexFragmentRoboletricTest.shouldShowPokemonsOnRv" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PokedexFragmentRoboletricTest.shouldShowPokemonsOnRv" />
+        <item itemvalue="JUnit.PokedexFragmentRoboletricTest" />
+        <item itemvalue="JUnit.PokedexFragmentRoboletricTest.shouldShow20PokemonsOnRv" />
+        <item itemvalue="JUnit.PokedexFragmentRoboletricTest.aaaaa" />
+        <item itemvalue="JUnit.PokedexFragmentRoboletricTest.a" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe2d63ca-75e2-4a36-a0e7-cc3fa57bffe6" name="Default Changelist" comment="" />
+      <created>1627310147733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627310147733</updated>
+    </task>
+    <task id="LOCAL-00001" summary="no message">
+      <created>1627395225373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627395225373</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First roboletric test">
+      <created>1628094432412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628094432412</updated>
+    </task>
+    <task id="LOCAL-00003" summary="slight improvements">
+      <created>1628094580716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628094580716</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="no message" />
+    <MESSAGE value="First roboletric test" />
+    <MESSAGE value="slight improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="slight improvements" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="437" y="81" width="806" height="871" key="#&lt;template&gt;_of_JUnit" timestamp="1627999840254">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="437" y="81" width="806" height="871" key="#&lt;template&gt;_of_JUnit/0.0.1680.1010@0.0.1680.1010" timestamp="1627999840254" />
+    <state x="437" y="108" key="#PokedexFragmentRoboletricTest.aaaaa" timestamp="1627999857312">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="437" y="108" key="#PokedexFragmentRoboletricTest.aaaaa/0.0.1680.1010@0.0.1680.1010" timestamp="1627999857312" />
+    <state x="437" y="108" key="#PokedexFragmentRoboletricTest.shouldShow20PokemonsOnRv" timestamp="1628008351646">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="437" y="108" key="#PokedexFragmentRoboletricTest.shouldShow20PokemonsOnRv/0.0.1680.1010@0.0.1680.1010" timestamp="1628008351646" />
+    <state x="437" y="108" key="#PokedexFragmentRoboletricTest.shouldShowPokemonsOnRv" timestamp="1628092884502">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="437" y="108" key="#PokedexFragmentRoboletricTest.shouldShowPokemonsOnRv/0.0.1680.1010@0.0.1680.1010" timestamp="1628092884502" />
+    <state x="294" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628017799226">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="294" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1628017799226" />
+    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1628002403795">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="520" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1628002403795" />
+    <state x="369" y="429" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1627335971709">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="369" y="429" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627335971709" />
+    <state x="636" y="386" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1627335973499">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="636" y="386" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627335973499" />
+    <state x="133" y="12" width="1466" height="863" key="CommitChangelistDialog2" timestamp="1628094580040">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="633" y="69" key="CommitChangelistDialog2/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627395224845" />
+    <state x="133" y="12" width="1466" height="863" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1628094580040" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1628094669608">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627480077281" />
+    <state width="1637" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1628094669608" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1628094669608">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.center/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627480077281" />
+    <state width="1637" height="272" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1628094669608" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1628094669608">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.left/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627480077281" />
+    <state width="1637" height="272" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1628094669608" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1628094669608">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="272" key="GridCell.Tab.0.right/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627480077281" />
+    <state width="1637" height="272" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1628094669608" />
+    <state x="341" y="150" key="SettingsEditor" timestamp="1627337021870">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="150" key="SettingsEditor/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627337021870" />
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1628094594040">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627395244831" />
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1628094594040" />
+    <state x="656" y="283" key="chooseDestDirectoryDialog" timestamp="1627927520381">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="656" y="283" key="chooseDestDirectoryDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1627927520381" />
+    <state x="603" y="315" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1627927520425">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="603" y="315" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1627927520425" />
+    <state x="557" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1627479584196">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="557" y="276" key="refactoring.ChangeSignatureDialog/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627479584196" />
+    <state x="496" y="233" key="run.anything.popup" timestamp="1627311522682">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="496" y="233" key="run.anything.popup/-1366.279.1366.728/0.0.1680.1010@0.0.1680.1010" timestamp="1627311522682" />
+  </component>
+</project>

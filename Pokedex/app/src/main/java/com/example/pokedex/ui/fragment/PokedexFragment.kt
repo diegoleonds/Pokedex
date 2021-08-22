@@ -18,6 +18,7 @@ import com.example.pokedex.ui.adapter.PokemonAdapter
 import com.example.pokedex.ui.model.Pokemon
 import com.example.pokedex.ui.util.ImgLoader
 import com.example.pokedex.ui.viewmodel.PokedexViewModel
+import com.example.pokedex.ui.viewmodel.PokedexViewModel.ViewState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -39,7 +40,14 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
         customizeRecyclerView(view)
         setBackBtnClick(view)
         observeViewModel(view)
-        getData()
+
+        viewModel.state.observe(viewLifecycleOwner) {
+            it?.let {
+                when (it) {
+                    is ViewState.InitData -> getData()
+                }
+            }
+        }
     }
 
     private fun inflateViews(view: View) {
@@ -93,8 +101,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
 
     private fun setBackBtnClick(view: View) {
         backBtn.setOnClickListener {
-            Navigation.findNavController(view)
-                .navigate(R.id.action_pokedexFragment_to_mainFragment)
+            Navigation.findNavController(view).popBackStack()
         }
     }
 }

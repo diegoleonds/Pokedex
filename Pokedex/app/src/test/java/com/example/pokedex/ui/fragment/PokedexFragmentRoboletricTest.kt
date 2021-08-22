@@ -38,20 +38,21 @@ class PokedexFragmentRoboletricTest {
 
     val getPokemonsUseCase = mockk<GetPokemonsUseCase>()
     val viewModel = PokedexViewModel(getPokemonsUseCase)
-    val spy = spyk(PokedexViewModel(getPokemonsUseCase))
 
     lateinit var module: Module
     lateinit var fragment: FragmentScenario<PokedexFragment>
 
+    val pokemon = Pokemon(
+        id = 1,
+        name = "Pikachu",
+        mainType = PokemonType.ELETRIC,
+        otherTypes = ArrayList(),
+        imgUrl = "url"
+    )
+
     @Before
     fun setup() {
         setupKoin()
-    }
-
-    private fun setupFragment() {
-        fragment = launchFragmentInContainer (
-            themeResId = R.style.Theme_Pokedex
-        )
     }
 
     private fun setupKoin() {
@@ -61,16 +62,15 @@ class PokedexFragmentRoboletricTest {
         loadKoinModules(module)
     }
 
+    private fun setupFragment() {
+        fragment = launchFragmentInContainer (
+            themeResId = R.style.Theme_Pokedex
+        )
+    }
+
     @Test
     fun shouldShowPokemonsOnRv() {
         runBlocking {
-            val pokemon = Pokemon(
-                id = 1,
-                name = "Pikachu",
-                mainType = PokemonType.ELETRIC,
-                otherTypes = ArrayList(),
-                imgUrl = "url"
-            )
             val pokemons = ArrayList<Pokemon>()
             for (i in 1..20) {
                 pokemons.add(pokemon.copy(id = i))
