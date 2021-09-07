@@ -54,7 +54,7 @@ class PokemonInfoFragmentTest {
     }
 
     @Test
-    fun shouldMantainTheTitleWhenAppBarCollapse() {
+    fun shouldMaintainTheTitleWhenAppBarCollapse() {
         onView(withId(R.id.PokemonInfoAppBarLayout)).perform(collapseAppBarLayout())
         onView(withId(R.id.PokemonInfoClpsToolbar)).check(matches(withTitle(pokemon.name)))
     }
