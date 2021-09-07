@@ -43,9 +43,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
 
         viewModel.state.observe(viewLifecycleOwner) {
             it?.let {
-                when (it) {
-                    is ViewState.InitData -> getData()
-                }
+                viewModel.resolveState(it)
             }
         }
     }
@@ -93,10 +91,6 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
                 }
             }
         }
-    }
-
-    private fun getData() {
-        viewModel.loadPokemons()
     }
 
     private fun setBackBtnClick(view: View) {
