@@ -14,6 +14,6 @@ suspend fun CoroutineScope.wait() {
 }
 
 fun afterCoroutine(scope: CoroutineScope, function: () -> ViewInteraction) = runBlocking {
-    this.wait()
+    scope.wait()
     function()
 }
