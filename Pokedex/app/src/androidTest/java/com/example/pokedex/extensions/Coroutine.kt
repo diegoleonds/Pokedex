@@ -13,6 +13,6 @@ suspend fun CoroutineScope.wait() {
 }
 
 infix fun CoroutineScope.after(function: () -> Unit) = runBlocking {
-    this.wait()
+    this@after.wait()
     function()
 }

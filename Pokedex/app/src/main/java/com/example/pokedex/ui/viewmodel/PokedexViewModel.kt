@@ -13,17 +13,8 @@ import kotlinx.coroutines.launch
 class PokedexViewModel(
     val getPokemonsUseCase: GetPokemonsUseCase
 ) : ViewModel() {
-
-    val state = MutableLiveData<ViewState>()
-
     private val _pokemons = MutableLiveData<Result<ArrayList<Pokemon>>>()
     val pokemons: LiveData<Result<ArrayList<Pokemon>>> by ::_pokemons
-
-    fun resolveState(state: ViewState) {
-        when (state) {
-            is ViewState.InitData -> loadPokemons()
-        }
-    }
 
     fun loadPokemons(offset: Int = ApiDefaultValues.offset) {
         viewModelScope.launch {

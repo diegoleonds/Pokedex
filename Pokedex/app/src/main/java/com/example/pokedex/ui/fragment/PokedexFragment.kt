@@ -5,7 +5,6 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,11 +17,6 @@ import com.example.pokedex.ui.adapter.PokemonAdapter
 import com.example.pokedex.ui.model.Pokemon
 import com.example.pokedex.ui.util.ImgLoader
 import com.example.pokedex.ui.viewmodel.PokedexViewModel
-import com.example.pokedex.ui.viewmodel.PokedexViewModel.ViewState
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
@@ -40,12 +34,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
         customizeRecyclerView(view)
         setBackBtnClick(view)
         observeViewModel(view)
-
-        viewModel.state.observe(viewLifecycleOwner) {
-            it?.let {
-                viewModel.resolveState(it)
-            }
-        }
+        viewModel.loadPokemons()
     }
 
     private fun inflateViews(view: View) {
