@@ -35,7 +35,7 @@ class PokedexFragmentTest {
 
     @Test
     fun checkRecyclerViewFirstItem() {
-        afterCoroutine(coroutineScopeReference) {
+        coroutineScopeReference afterCoroutine {
             onView(withId(R.id.PokedexRv))
                 .check(
                     matches(

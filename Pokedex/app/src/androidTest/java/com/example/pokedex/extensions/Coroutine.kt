@@ -13,7 +13,7 @@ suspend fun CoroutineScope.wait() {
     jobs?.joinAll()
 }
 
-fun afterCoroutine(scope: CoroutineScope, function: () -> ViewInteraction) = runBlocking {
-    scope.wait()
+infix fun CoroutineScope.afterCoroutine(function: () -> Unit) = runBlocking {
+    this@afterCoroutine.wait()
     function()
 }
