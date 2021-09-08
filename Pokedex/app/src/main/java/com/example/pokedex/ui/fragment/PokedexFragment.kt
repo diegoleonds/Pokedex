@@ -16,6 +16,7 @@ import com.example.pokedex.ui.adapter.Click
 import com.example.pokedex.ui.adapter.MarginItemDecoration
 import com.example.pokedex.ui.adapter.PokemonAdapter
 import com.example.pokedex.ui.model.Pokemon
+import com.example.pokedex.ui.util.EspressoIdlingResource
 import com.example.pokedex.ui.util.ImgLoader
 import com.example.pokedex.ui.viewmodel.PokedexViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -76,6 +77,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
     private fun observeViewModel(view: View) {
         viewModel.pokemons.observe(viewLifecycleOwner) {
             it?.let {
+                EspressoIdlingResource.decrement()
                 when (it) {
                     is Result.Success -> pokemonAdapter.updateData(it.data)
                     is Result.Error -> Toast.makeText(
@@ -88,6 +90,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
     }
 
     private fun getData() {
+        EspressoIdlingResource.increment()
         viewModel.getPokemons()
     }
 

@@ -8,6 +8,7 @@ import com.example.pokedex.data.api.ApiDefaultValues
 import com.example.pokedex.domain.usecase.GetPokemonsUseCase
 import com.example.pokedex.ui.model.Pokemon
 import com.example.pokedex.data.error.Result
+import com.example.pokedex.ui.util.EspressoIdlingResource
 import kotlinx.coroutines.launch
 
 class PokedexViewModel(

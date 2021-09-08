@@ -57,6 +57,7 @@ dependencies {
     //Espresso
     def espresso_version = "3.3.0"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    implementation "androidx.test.espresso:espresso-idling-resource:$espresso_version"
 
     //Fragment Scenario
     def fragment_version = "1.3.5"
