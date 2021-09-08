@@ -1,6 +1,5 @@
 package com.example.pokedex.extensions
 
-import androidx.test.espresso.ViewInteraction
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.joinAll
@@ -13,7 +12,7 @@ suspend fun CoroutineScope.wait() {
     jobs?.joinAll()
 }
 
-infix fun CoroutineScope.afterCoroutine(function: () -> Unit) = runBlocking {
-    this@afterCoroutine.wait()
+infix fun CoroutineScope.after (function: () -> Unit) = runBlocking {
+    this@after.wait()
     function()
 }

@@ -94,7 +94,7 @@ class PokedexFragment : Fragment(R.layout.pokedex_fragment) {
     private fun setBackBtnClick(view: View) {
         backBtn.setOnClickListener {
             Navigation.findNavController(view)
-                .navigate(R.id.action_pokedexFragment_to_mainFragment)
+                .popBackStack()
         }
     }
 }

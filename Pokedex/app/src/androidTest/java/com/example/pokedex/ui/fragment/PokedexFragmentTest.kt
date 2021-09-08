@@ -9,7 +9,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import com.example.pokedex.R
-import com.example.pokedex.extensions.afterCoroutine
+import com.example.pokedex.extensions.after
 import com.example.pokedex.ui.model.PokemonType
 import com.example.pokedex.util.launchFragment
 import com.example.pokedex.viewmatchers.recyclerViewAtPositionOnView
@@ -35,7 +35,7 @@ class PokedexFragmentTest {
 
     @Test
     fun checkRecyclerViewFirstItem() {
-        coroutineScopeReference afterCoroutine {
+        coroutineScopeReference after {
             onView(withId(R.id.PokedexRv))
                 .check(
                     matches(
